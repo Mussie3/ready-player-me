@@ -6,10 +6,10 @@ export default function AvatarRender() {
 
   const subdomain = 'adlerinternal-4ba15m'; // Replace with your custom subdomain
 
-  const frame = window.document.getElementById('frame');
+  const frame = document.getElementById('frame');
 
   window.addEventListener('message', subscribe);
-  window.document.addEventListener('message', subscribe);
+  document.addEventListener('message', subscribe);
 
   function subscribe(event: any) {
     const json = parse(event);
